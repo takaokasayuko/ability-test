@@ -1,0 +1,92 @@
+.header {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 20px 0;
+  border-bottom: solid 2px #C5B9B0;
+}
+.header__tittle {
+  text-align: center;
+  margin: 0 auto;
+  color: #82756A
+}
+
+/* メイン部分 */
+
+.form__main {
+  max-width: 1230px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+.form__heading {
+  color: #82756A;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 20px;
+}
+
+.form {
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+}
+.form__group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.form__label--required {
+  margin-left: 5px;
+  color: red;
+}
+.form__error {
+  height: 20px;
+  color: #ff0000;
+  text-align: left;
+}
+.form__input--text input,
+.form__input--textarea textarea {
+  width: 600px;
+  padding: 10px;
+  background: #F4F4F4;
+  border: none;
+  color: #8B7969;
+  appearance: none;
+  margin-left: 20px;
+}
+
+.form__input--text-name input{
+  width: 300px;
+  border: none;
+  background: #F4F4F4;
+  color: #8B7969;
+  appearance: none;
+  height: 30px;
+
+}
+.form__input--radio  {
+  width: 600px;
+  text-align: left;
+}
+.form__input--radio input:not(:first-of-type) {
+  margin-left: 30px;
+}
+.form__input--text select {
+  width: 350px;
+  padding: 10px;
+  background: #F4F4F4;
+  border: none;
+  color: #8B7969;
+}
+.form__input--textarea textarea {
+  height: 150px;
+}
+.form__button-submit {
+  padding: 10px;
+  width: 20%;
+  height: 50px;
+  border: none;
+  background: #82756A;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+}

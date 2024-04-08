@@ -16,8 +16,8 @@
 </header>
 
 <main>
-  <div class="login-form__content">
-    <div class="login-form__heading">
+  <div class="form__main">
+    <div class="form__heading">
       <h2>Login</h2>
     </div>
 

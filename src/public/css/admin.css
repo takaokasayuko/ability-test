@@ -1,0 +1,71 @@
+.header {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 20px 0;
+  border-bottom: solid 2px #C5B9B0;
+}
+
+.header__tittle {
+  text-align: center;
+  margin: 0 auto;
+  color: #82756A
+}
+
+.header__link {
+  border: solid 2px #C5B9B0;
+  text-align: center;
+  width: 80px;
+  background: F0F0F0;
+  margin: -60px 20px 0 auto;
+
+}
+
+.header__link-logo {
+  color: #C5B9B0;
+  text-decoration: none;
+}
+
+/* メイン部分 */
+
+.form__main {
+  max-width: 1230px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+
+.form__heading {
+  color: #82756A;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 20px;
+}
+
+/* 検索 */
+.search__content {
+  width: 90%;
+  margin: 0 auto;
+
+}
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+
+}
+.search-form__keyword {
+  width: 25%;
+}
+
+.search-form__button-submit {
+  height: 40px;
+}
+.search-form__button-reset {
+  height: 40px;
+}
+
+/* CSVエクスポートとページネーション */
+.search-form__page{
+  display: flex;
+}
+
+/* 問い合わせ一覧表 */

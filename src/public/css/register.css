@@ -4,6 +4,7 @@
   max-width: 1230px;
   margin: 0 auto;
   padding: 20px 0;
+  border-bottom: solid 2px #C5B9B0;
 }
 
 .header__tittle {
@@ -17,7 +18,7 @@
   border: solid 2px #C5B9B0;
   text-align: center;
   width: 80px;
-  background: F6F6F6;
+  background: F0F0F0;
   margin: -60px 20px 0 auto;
 
 }
@@ -29,7 +30,7 @@
 
 /* メイン部分 */
 
-.register-form__content {
+.form__main {
   background-color: #F1ECE7;
   max-width: 1230px;
   padding-bottom: 50px;
@@ -45,7 +46,7 @@
   border: solid 2px #C5B9B0;
 }
 
-.register-form__heading{
+.form__heading{
   color: #82756A;;
   text-align: center;
   padding: 30px 0;

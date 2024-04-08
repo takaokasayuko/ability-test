@@ -1,0 +1,76 @@
+.header {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 20px 0;
+  border-bottom: solid 2px #C5B9B0;
+}
+
+.header__tittle {
+  text-align: center;
+  margin: 0 auto;
+  color: #82756A
+}
+
+/* メイン部分 */
+
+.form__main {
+  max-width: 1230px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+
+.form__heading {
+  color: #82756A;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 20px;
+}
+
+.form {
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+}
+.confirm-table {
+  border: 1px solid #ddd;
+}
+.confirm-table__inner {
+  width: 100%;
+}
+.confirm-table__header {
+  padding: 15px 30px;
+  width: 30%;
+  border-bottom: 1px solid #ddd;
+  background: #BAA899;
+  color: white;
+  text-align: left;
+}
+.confirm-table__text {
+  padding: 15px;
+  border-bottom: 1px solid #BAA899;
+  text-align: left;
+  padding: 0 50px;
+}
+.confirm-table__text input {
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #BAA899;
+}
+.form__button {
+  margin-top: 30px;
+  text-align: center;
+}
+.form__button-submit {
+
+  width: 10%;
+  height: 30px;
+  border: none;
+  background: #BAA899;
+  color: #fff;
+  cursor: pointer;
+}
+.form__button-link {
+  color: #BAA899;
+  margin-left: 30px;
+}

@@ -16,8 +16,8 @@
 </header>
 
 <main>
-  <div class="register-form__content">
-    <div class="register-form__heading">
+  <div class="form__main">
+    <div class="form__heading">
       <h2>Register</h2>
     </div>
 
