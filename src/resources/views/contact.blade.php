@@ -18,7 +18,8 @@
       <h2>Contact</h2>
     </div>
 
-    <form class="form">
+    <form class="form" action="/confirm" method="post">
+      @csrf
 
       <div class="form__group">
         <div class="form__group-title">
@@ -27,8 +28,8 @@
         </div>
         <div class="form__group-content">
           <div class="form__input--text-name">
-            <input type="text" name="first_name" placeholder="例: 山田" />
-            <input type="text" name="last_name" placeholder="例: 太郎" />
+            <input type="text" name="first_name" value="{{ old('first_name') }}" placeholder="例: 山田" />
+            <input type="text" name="last_name" value="{{ old('last_name') }}" placeholder="例: 太郎" />
           </div>
           <div class="form__error">
             <!--バリデーション機能を実装したら記述します。-->
@@ -43,7 +44,7 @@
         </div>
         <div class="form__group-content">
           <div class="form__input--radio">
-            <input type="radio" name="gender" value="men" checked/>男性
+            <input type="radio" name="gender" value="men" checked />男性
             <input type="radio" name="gender" value="women" />女性
             <input type="radio" name="gender" value="other" />その他
           </div>
@@ -60,7 +61,7 @@
         </div>
         <div class="form__group-content">
           <div class="form__input--text">
-            <input type="email" name="email" placeholder="例: test@example.com" />
+            <input type="email" name="email" value="{{ old('email') }}" placeholder="例: test@example.com" />
           </div>
           <div class="form__error">
             <!--バリデーション機能を実装したら記述します。-->
@@ -75,11 +76,11 @@
         </div>
         <div class="form__group-content">
           <div class="form__input--text-tel">
-            <input type="tel" name="tel1" placeholder="090" />
+            <input type="tel" name="tel" value="{{ old('tel') }}" placeholder="090" />
             <span class="form__label--tel">-</span>
-            <input type="tel" name="tel2" placeholder="1234" />
+            <input type="tel" name="exchange_tel" value="{{ old('exchange_tel') }}" placeholder="1234" />
             <span class="form__label--tel">-</span>
-            <input type="tel" name="tel3" placeholder="5678" />
+            <input type="tel" name="subscriber_tel" value="{{ old('subscriber_tel') }}" placeholder="5678" />
           </div>
           <div class="form__error">
             <!--バリデーション機能を実装したら記述します。-->
@@ -124,7 +125,9 @@
         <div class="form__group-content">
           <div class="form__input--text">
             <select class="category-select" name="category_id">
+            
               <option value="">選択してください</option>
+            
             </select>
           </div>
           <div class="form__error">
@@ -140,7 +143,7 @@
         </div>
         <div class="form__group-content">
           <div class="form__input--textarea">
-            <textarea name="content" placeholder="お問い合わせ内容をご記載ください"></textarea>
+            <textarea name="detail" placeholder="お問い合わせ内容をご記載ください"></textarea>
           </div>
         </div>
       </div>
