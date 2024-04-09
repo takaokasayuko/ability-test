@@ -43,7 +43,7 @@
         </div>
         <div class="form__group-content">
           <div class="form__input--radio">
-            <input type="radio" name="gender" value="men" />男性
+            <input type="radio" name="gender" value="men" checked/>男性
             <input type="radio" name="gender" value="women" />女性
             <input type="radio" name="gender" value="other" />その他
           </div>
@@ -74,8 +74,12 @@
           <span class="form__label--required">※</span>
         </div>
         <div class="form__group-content">
-          <div class="form__input--text">
-            <input type="tel" name="tel" placeholder="09012345678" />
+          <div class="form__input--text-tel">
+            <input type="tel" name="tel1" placeholder="090" />
+            <span class="form__label--tel">-</span>
+            <input type="tel" name="tel2" placeholder="1234" />
+            <span class="form__label--tel">-</span>
+            <input type="tel" name="tel3" placeholder="5678" />
           </div>
           <div class="form__error">
             <!--バリデーション機能を実装したら記述します。-->
@@ -119,7 +123,7 @@
         </div>
         <div class="form__group-content">
           <div class="form__input--text">
-            <select name="category_id">
+            <select class="category-select" name="category_id">
               <option value="">選択してください</option>
             </select>
           </div>

@@ -12,17 +12,18 @@
 }
 
 .header__link {
-  border: solid 2px #C5B9B0;
-  text-align: center;
   width: 80px;
-  background: F0F0F0;
+
   margin: -60px 20px 0 auto;
 
 }
 
-.header__link-logo {
+.header__button-submit{
   color: #C5B9B0;
+  background: #F0F0F0;
   text-decoration: none;
+  cursor: pointer;
+  border: none;
 }
 
 /* メイン部分 */

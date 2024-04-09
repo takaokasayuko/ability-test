@@ -9,9 +9,10 @@
   <div class="header__tittle">
     <h1>FashionablyLate</h1>
   </div>
-  <div class="header__link">
-    <a href="/login" class="header__link-logo">logout</a>
-  </div>
+  <form class="header__link" action="{{ route('logout') }}" method="post">
+    @csrf
+    <button class="header__button-submit">logout</button>
+  </form>
 </header>
 
 <main>

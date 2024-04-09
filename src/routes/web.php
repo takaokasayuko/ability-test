@@ -18,7 +18,9 @@ use App\Http\Controllers\ContactController;
 
 Route::get('/register', [UserController::class, 'register']);
 Route::get('/login', [UserController::class, 'login']);
-Route::get('/admin', [UserController::class, 'admin']);
+Route::middleware('auth')->group(function () {
+    Route::get('/admin', [UserController::class, 'admin']);
+});
 
 Route::get('/', [ContactController::class, 'index']);
 Route::get('/confirm', [ContactController::class, 'confirm']);

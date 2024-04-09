@@ -3,6 +3,7 @@
   max-width: 1230px;
   height: 600px;
   padding-top: 25%;
+  margin: 0 auto;
 }
 .form__button {
   width: 10%;

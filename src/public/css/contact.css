@@ -1,5 +1,5 @@
 .header {
-  max-width: 1230px;
+  width: 1230px;
   margin: 0 auto;
   padding: 20px 0;
   border-bottom: solid 2px #C5B9B0;
@@ -13,7 +13,7 @@
 /* メイン部分 */
 
 .form__main {
-  max-width: 1230px;
+  width: 1230px;
   padding-bottom: 50px;
   margin: 0 auto;
 }
@@ -43,6 +43,10 @@
   color: #ff0000;
   text-align: left;
 }
+.form__label--item {
+  display: inline-block;
+  white-space: nowrap;
+}
 .form__input--text input,
 .form__input--textarea textarea {
   width: 600px;
@@ -53,7 +57,10 @@
   appearance: none;
   margin-left: 20px;
 }
-
+.form__input--text-name {
+  display: inline-block;
+  white-space: nowrap;
+}
 .form__input--text-name input{
   width: 300px;
   border: none;
@@ -69,6 +76,18 @@
 }
 .form__input--radio input:not(:first-of-type) {
   margin-left: 30px;
+}
+.form__input--text-tel input {
+  width: 175px;
+  border: none;
+  background: #F4F4F4;
+  color: #8B7969;
+  appearance: none;
+  height: 30px;
+  text-align: center;
+}
+.form__label--tel {
+  margin: 0 10px;
 }
 .form__input--text select {
   width: 350px;

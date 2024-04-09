@@ -22,18 +22,19 @@
     </div>
 
     <div class="form__content">
-      <form class="form">
+      <form class="form" action="/register" method="post">
+        @csrf
 
         <!-- 名前 -->
 
         <div class="form__group">
           <div class="form__group-title">
             <span class="form__label--item">お名前</span>
-            <!-- <div class="form__error">
-          @error('name')
-          {{ $message }}
-          @enderror
-        </div> -->
+            <div class="form__error">
+              @error('name')
+              {{ $message }}
+              @enderror
+            </div>
           </div>
           <div class="form__group-content">
             <div class="form__input--text">
@@ -46,11 +47,11 @@
         <div class="form__group">
           <div class="form__group-title">
             <span class="form__label--item">メールアドレス</span>
-            <!-- <div class="form__error">
-          @error('email')
-          {{ $message }}
-          @enderror
-        </div> -->
+            <div class="form__error">
+              @error('email')
+              {{ $message }}
+              @enderror
+            </div>
           </div>
           <div class="form__group-content">
             <div class="form__input--text">
@@ -63,11 +64,11 @@
         <div class="form__group">
           <div class="form__group-title">
             <span class="form__label--item">パスワード</span>
-            <!-- <div class="form__error">
-          @error('password')
-          {{ $message }}
-          @enderror
-        </div> -->
+            <div class="form__error">
+              @error('password')
+              {{ $message }}
+              @enderror
+            </div>
           </div>
           <div class="form__group-content">
             <div class="form__input--text">
