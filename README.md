@@ -3,7 +3,10 @@
 ## 環境構築
 
 ### Dockerビルド
-1.git clone https://github.com/takaokasayuko/ability-test.git
+1.
+```
+git clone https://github.com/takaokasayuko/ability-test.git
+```
 
 2.docker-compose up -d --build
 
