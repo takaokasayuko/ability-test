@@ -30,9 +30,9 @@
           <div class="form__group-title">
             <span class="form__label--item">メールアドレス</span>
             <div class="form__error">
-            @error('email')
-            {{ $message }}
-            @enderror
+              @error('email')
+              {{ $message }}
+              @enderror
             </div>
           </div>
           <div class="form__group-content">
@@ -47,9 +47,9 @@
           <div class="form__group-title">
             <span class="form__label--item">パスワード</span>
             <div class="form__error">
-            @error('password')
-            {{ $message }}
-            @enderror
+              @error('password')
+              {{ $message }}
+              @enderror
             </div>
           </div>
           <div class="form__group-content">

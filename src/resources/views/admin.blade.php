@@ -26,13 +26,14 @@
       <form class="search-form" action="">
         <input class="search-form__keyword" type="search" name="keyword" placeholder="名前やメールアドレスを入力してください">
         <select class="search-form__gender" name="gender" id="">
+          <option >性別</option>
           <option value="全て">全て</option>
           <option value="男性">男性</option>
           <option value="女性">女性</option>
           <option value="その他">その他</option>
         </select>
         <select class="search-form__contact" name="category_id">
-          <option value="">お問い合わせの種類</option>
+          <option>お問い合わせの種類</option>
         </select>
         <input class="search-form__date" type="date">
 
@@ -46,7 +47,9 @@
       <div class="search-form__page">
         <div class="search-form__CSV">
           <button class="search-form__button-CSV">エクスポート</button>
-          <div class="search-form__paginate"></div>
+          <div class="search-form__paginate">
+
+          </div>
         </div>
       </div>
 
@@ -57,7 +60,7 @@
             <th colspan="2" class="contact-table__header--name">お名前</th>
             <th class="contact-table__header--gender">性別</th>
             <th class="contact-table__header--email">メールアドレス</th>
-            <th class="contact-table__header--contact">お問い合わせ</th>
+            <th colspan="2" class="contact-table__header--contact">お問い合わせ</th>
           </tr>
           <tr class="contact-table__item">
             <td class="contact-table__item--first_name">山田</td>

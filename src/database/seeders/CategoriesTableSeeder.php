@@ -20,9 +20,6 @@ class CategoriesTableSeeder extends Seeder
         $param = ['content' => '商品の交換について'];
         DB::table('categories')->insert($param);
 
-        $param = ['content' => '商品の交換について'];
-        DB::table('categories')->insert($param);
-
         $param = ['content' => '商品トラブル'];
         DB::table('categories')->insert($param);
 

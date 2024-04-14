@@ -33,6 +33,12 @@
           </div>
           <div class="form__error">
             <!--バリデーション機能を実装したら記述します。-->
+            @error('first_name')
+            {{ $message }}
+            @enderror
+            @error('last_name')
+            {{ $message }}
+            @enderror
           </div>
         </div>
       </div>
@@ -44,12 +50,15 @@
         </div>
         <div class="form__group-content">
           <div class="form__input--radio">
-            <input type="radio" name="gender" value="men" checked />男性
-            <input type="radio" name="gender" value="women" />女性
-            <input type="radio" name="gender" value="other" />その他
+            <input type="radio" name="gender" value="男性" checked />男性
+            <input type="radio" name="gender" value="女性" />女性
+            <input type="radio" name="gender" value="その他" />その他
           </div>
           <div class="form__error">
             <!--バリデーション機能を実装したら記述します。-->
+            @error('gender')
+            {{ $message }}
+            @enderror
           </div>
         </div>
       </div>
@@ -65,6 +74,9 @@
           </div>
           <div class="form__error">
             <!--バリデーション機能を実装したら記述します。-->
+            @error('email')
+            {{ $message }}
+            @enderror
           </div>
         </div>
       </div>
@@ -83,7 +95,15 @@
             <input type="tel" name="subscriber_tel" value="{{ old('subscriber_tel') }}" placeholder="5678" />
           </div>
           <div class="form__error">
-            <!--バリデーション機能を実装したら記述します。-->
+            @error('tel')
+            {{ $message }}
+            @enderror
+            @error('exchange_tel')
+            {{ $message }}
+            @enderror
+            @error('subscriber_tel')
+            {{ $message }}
+            @enderror
           </div>
         </div>
       </div>
@@ -98,7 +118,9 @@
             <input type="text" name="address" placeholder="例: 東京都渋谷区千駄ヶ谷1-2-3" />
           </div>
           <div class="form__error">
-            <!--バリデーション機能を実装したら記述します。-->
+            @error('address')
+            {{ $message }}
+            @enderror
           </div>
         </div>
       </div>
@@ -111,9 +133,11 @@
           <div class="form__input--text">
             <input type="text" name="building" placeholder="例: 千駄ヶ谷マンション101" />
           </div>
-          <div class="form__error">
-            <!--バリデーション機能を実装したら記述します。-->
-          </div>
+          <!-- <div class="form__error">
+            @error('password')
+            {{ $message }}
+            @enderror
+          </div> -->
         </div>
       </div>
 
@@ -125,13 +149,17 @@
         <div class="form__group-content">
           <div class="form__input--text">
             <select class="category-select" name="category_id">
-            
               <option value="">選択してください</option>
-            
+              @foreach ($categories as $category)
+              <option value="{{ $category['id'] }}">{{ $category['content'] }}
+                @endforeach
+              </option>
             </select>
           </div>
           <div class="form__error">
-            <!--バリデーション機能を実装したら記述します。-->
+            @error('category_id')
+            {{ $message }}
+            @enderror
           </div>
         </div>
       </div>
@@ -144,6 +172,9 @@
         <div class="form__group-content">
           <div class="form__input--textarea">
             <textarea name="detail" placeholder="お問い合わせ内容をご記載ください"></textarea>
+            @error('detail')
+            {{ $message }}
+            @enderror
           </div>
         </div>
       </div>
